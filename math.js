@@ -14,6 +14,6 @@ function doMath(num1, num2, operator) {
     case '*':
       return num1*num2;
     case '/':
-      return num/num2;
+      return num1/num2;
   }
 }
