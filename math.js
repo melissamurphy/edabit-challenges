@@ -26,6 +26,17 @@ function intWithinBounds(n, lower, upper) {
 // false if n is less than lower
 
 
+function fizzBuzzFuzz(num1, num2) {
+  for(var x = num1; num1 <= num2; num1++) {
+    if(num1%3===0){
+      console.log("Fizz");
+    } else if (num1%5===0) {
+      console.log("Buzz");
+    } else if (num1%7===0) {
+      console.log("Fuzz");
+    }
+
+
 //Myrobin
 //Write a function that accepts a positive number X.
 //The function should console log a pyramid shape with X levels using the #(Twitter's invention) character. Make sure the pyramid has spaces on both the left and right hand sides
@@ -33,5 +44,6 @@ function intWithinBounds(n, lower, upper) {
 function pyramid(num) {
   for (var x = 1; x <= num; x = x + 2) {
     console.log(" ".repeat((num - x) / 2) + "#".repeat(x));
+
   }
 }
