@@ -24,3 +24,8 @@ function palindrome(string) {
 
 // normalize casing since unequal casing makes comparison false
 // eliminate white spaces (with split and join) that may make the comparison false
+
+//It's time to write a function that takes in 10 integers and returns the phone number as a formatted string. The string would look something like this: (123) 456-7890
+function phoneNumber(string) {
+  return "(" + string.slice(0, 3) + ")" + string.slice(3, 6) + "-" + string.slice(6, 10);
+}
