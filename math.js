@@ -47,3 +47,9 @@ function pyramid(num) {
 
   }
 }
+
+//https://edabit.com/challenge/Q2j5FTFtsk7PdzrQk
+
+function remainder(num1, num2) {
+  return num1 % num2;
+}
