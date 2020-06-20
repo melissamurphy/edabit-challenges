@@ -29,3 +29,13 @@ function palindrome(string) {
 function phoneNumber(string) {
   return "(" + string.slice(0, 3) + ")" + string.slice(3, 6) + "-" + string.slice(6, 10);
 }
+
+//This function should take in an array (each array element represents a slot item) and return true if all of the elements are the same
+function isJackpot(array) {
+  for (var i = 0; i < array.length - 1; i++) {
+    if (array[i] !== array[i + 1]) {
+      return false;
+    }
+  }
+  return true;
+}
