@@ -53,3 +53,16 @@ function pyramid(num) {
 function remainder(num1, num2) {
   return num1 % num2;
 }
+
+    function daysToFreedom(date1, date2) {
+      return date2 - date1;
+    }
+
+    // if (date.month == 4 || date.month == 6 || date.month == 9 || date.month == 11) {
+    //   return date.month * 30;
+    // } else if (date.month == 2) {
+    //   return 28
+    // } else {
+    //   return
+    // }
+    // console.log(daysToFreedom([month: 6, day: 21], [month: 10, day: 1]))
