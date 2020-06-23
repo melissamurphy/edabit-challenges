@@ -10,3 +10,16 @@ function countTrue(arr) {
   }
   return count;
 }
+
+function fullHouse(array) {
+  array.sort();
+  console.log(array);
+  var counter = 1;
+  var counter2 = 1;
+  for (var i = 0; i < array.length - 1; i++) {
+    if (array[i] === array[i + 1]) {
+
+    }
+  }
+}
+console.log(fullHouse(["K", "K", "A", "K", "A"]));
