@@ -53,3 +53,11 @@ function pyramid(num) {
 function remainder(num1, num2) {
   return num1 % num2;
 }
+
+//Today, we're all lucky, because we can practice by writing code that will print all the multiplication tables from 1 to X. The format could look something like this: '1 x 1 = 1' . Have fun taking a trip down memory lane!
+
+function multTable(num){
+  for(i=1; i <= num; i++){
+    console.log(i + " x " + num " = " + i*num );
+  }
+}
