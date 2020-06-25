@@ -43,7 +43,7 @@ function isJackpot(array) {
 //myRobin:
 function vowelCount(string) {
   var count = 0;
-  string.toLowerCase();
+  string = string.toLowerCase(); // must assign the new value (the value returned by toLowerCase) to variable 'string' for future operations
   for (var i = 0; i < string.length; i++) {
     if (string[i] === "a" || string[i] === "e" || string[i] === "i" || string[i] === "o" || string[i] === "u") {
       count++;
