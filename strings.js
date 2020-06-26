@@ -39,3 +39,19 @@ function isJackpot(array) {
   }
   return true;
 }
+
+// myRobin: Why don't you do the same: write a function that removes each "fly" you see in a string, as well as any letter from the word "fly" (f, l, or y), just to be safe!
+
+function removeFly(string){
+  var newString = "";
+  for(var i=0; i < string.length; i++){
+    if (string[i]!=="f"&& string[i]!=="l"&&string[i]!=="y"){
+      newString = newString + string[i];
+    }
+  }
+  if(string===newString){
+    return "No flies here!"
+  } else {
+    return "gone:" + newString;
+  }
+}
