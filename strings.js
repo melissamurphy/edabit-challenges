@@ -40,6 +40,7 @@ function isJackpot(array) {
   return true;
 }
 
+
 // myRobin: Why don't you do the same: write a function that removes each "fly" you see in a string, as well as any letter from the word "fly" (f, l, or y), just to be safe!
 
 function removeFly(string){
@@ -55,3 +56,17 @@ function removeFly(string){
     return "gone:" + newString;
   }
 }
+
+//myRobin:
+function vowelCount(string) {
+  var count = 0;
+  string = string.toLowerCase(); // must assign the new value (the value returned by toLowerCase) to variable 'string' for future operations
+  for (var i = 0; i < string.length; i++) {
+    if (string[i] === "a" || string[i] === "e" || string[i] === "i" || string[i] === "o" || string[i] === "u") {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(vowelCount("vowelCOUNT"));
+
