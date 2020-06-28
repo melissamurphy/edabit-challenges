@@ -52,6 +52,6 @@ function removeFly(string){
   if(string===newString){
     return "No flies here!"
   } else {
-    return "gone:" + newString;
+    return newString;
   }
 }
