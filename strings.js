@@ -53,9 +53,25 @@ function removeFly(string){
   if(string===newString){
     return "No flies here!"
   } else {
-    return "gone:" + newString;
+    return newString;
   }
 }
+
+// myRobin: Check if the asterisk is inside of the box.The function you write must return true only if the asterisk is INSIDE
+function inBox(array) {
+  for (var i = 0; i < array.length; i++) {
+    if (
+      array[i].includes("*") &&
+      array[i][0] !== "*" &&
+      array[i][array[i].length - 1] !== "*"
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log(inBox(["####", "#* #", "#  #", "####"]));
 
 //myRobin:
 function vowelCount(string) {
