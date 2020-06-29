@@ -96,7 +96,7 @@ function isBalanced(string) {
     leftSum = leftSum + string.charCodeAt(i);
     console.log(leftSum);
     console.log(string.length - i);
-    rightSum = rightSum + string.charCodeAt(string.length - 1 - i);
+    rightSum = rightSum + string.charCodeAt(string.length - 1 - i); // must subtract 1 from length ANY time you want to the last character of a string!
     console.log(rightSum);
   }
   return leftSum === rightSum;
