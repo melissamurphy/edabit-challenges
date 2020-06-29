@@ -86,3 +86,18 @@ function vowelCount(string) {
 }
 console.log(vowelCount("vowelCOUNT"));
 
+
+//myRobin: Each letter's value comes from its position in the alphabet (a=1, b=2, etc.) and can be summed to determine the left and right hand sums. If a word has an odd number of characters, the middle character should be ignored. Can you write a function that determines whether or not a word is balanced?
+function isBalanced(string) {
+  string = string.toLowerCase();
+  var leftSum = 0;
+  var rightSum = 0;
+  for (var i = 0; i < Math.floor(string.length / 2); i++) {
+    leftSum = leftSum + string.charCodeAt(i);
+    console.log(leftSum);
+    console.log(string.length - i);
+    rightSum = rightSum + string.charCodeAt(string.length - 1 - i);
+    console.log(rightSum);
+  }
+  return leftSum === rightSum;
+}
