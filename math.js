@@ -62,3 +62,17 @@ function remainder(num1, num2) {
         }
       }
     }
+
+// myRobin: Instead of counting how many numbers contain the number 8, you need to count all instances that "8" appears.
+// In case you may ask the question to me, I'd like to mention first that, for instance, 1882 should be counted as 2, 8880 as 3)."
+
+function eights(num){
+  var count = 0;
+  for(var i=0; i<num; i++){
+    for(var digit=0; digit<num.length; digit++){
+      if((num+"")[digit]==8){
+      count = count + 1;
+      }
+    }
+  }
+}
