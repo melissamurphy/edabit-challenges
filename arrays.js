@@ -39,3 +39,15 @@ function shortestStep(array) {
 }
 
 console.log(shortestStep([1, 3, 4, 8, 13, 17, 20]))
+
+function isMagic(array){
+  for(var i=0; i < array.length - 1; i++){
+    if (array[i].reduce((a, b) => a + b, 0)!==array[i+1].reduce((a, b) => a + b, 0)){
+      return false;
+    }
+    if(array[0][i] + array[1][i] + array[2][i] !== array[0][i+1] + array[1][i+1] + array[2][i+1]){
+      return false;
+    }
+  }
+  return true;
+}
