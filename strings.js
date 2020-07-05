@@ -98,3 +98,16 @@ function isBalanced(string) {
   }
   return leftSum === rightSum;
 }
+
+//myRobin: Can you write a function that counts the number of words that ends in 'ly'. For this problem, even if the word is an adjective, it's still okay to count it as true. However, you must not count the word if it starts or contains 'ly' - it MUST be at the end
+
+function adverbCounter (string) {
+  var array = string.split(" ");
+  var adverbs = "";
+  for(var i=0; i < array.length; i++){
+    if(array[i][array.length-1]==="y" && array[i][array.length-2]==="l"){
+      adverbs = adverbs + array[i];
+    }
+  }
+  return adverbs;
+}
