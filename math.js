@@ -65,13 +65,11 @@ function remainder(num1, num2) {
 
 // myRobin: Write an Infinity Gauntlet program that randomly deletes and returns half of the elements in the input list when Thanos bounces a finger (when running the program)
     function thanos(array) {
-      var newArray = [];
       for (var i = array.length - 1; i > (array.length + 1) / 2; i--) {
         var randomNum = Math.floor(Math.random() * (i + 1));
         var randomItem = array.splice(randomNum, 1)[0];
-        newArray.push(randomItem);
       }
-      return newArray;
+      return array;
     }
 
     console.log(thanos([2, 3, 1, 6, 5, 7]));
