@@ -111,3 +111,12 @@ function adverbCounter(string) {
   }
   return adverbs;
 }
+
+function numScan(string) { return !isNaN(parseFloat(n)) && isFinite(n); }
+
+console.log(numScanner("2.2"))
+console.log(numScanner("1208"))
+console.log(numScanner("number"))
+console.log(numScanner("0x71e"))
+console.log(numScanner("2.5.9"))
+console.log(numScanner("3/2"))
