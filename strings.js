@@ -120,3 +120,11 @@ console.log(numScanner("number"))
 console.log(numScanner("0x71e"))
 console.log(numScanner("2.5.9"))
 console.log(numScanner("3/2"))
+
+//myRobin: For some odd reason, your computer science professor has become obsessed with parentheses - she probably spent too much time coding these days... In any case, she wants you to write a function that will turn each group of parentheses in a string into separate groups - these groups should be balanced.
+
+// For example:
+
+// group("()()()") ➞["()", "()", "()"]
+
+// group("((())())(()(()()))") ➞["((())())", "(()(()()))"]
