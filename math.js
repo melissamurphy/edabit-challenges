@@ -63,6 +63,32 @@ function remainder(num1, num2) {
       }
     }
 
+
+//myRobin: Beginner programmer John Doe wants to make a program that adds and outputs each positive digit entered by the user (range is int). For instance, the result of 5528 is 20 and the result of 6714283 is 31.
+    function addDigits(num) {
+      var total = 0;
+
+      for (var i = 0; i < num.toString().length; i++) {
+        total = total + num.toString()[i] * 1
+
+      }
+      return total;
+    }
+    console.log(addDigits(5528));
+
+// myRobin:  It looks like you just became a freelancer and snagged your first client. Unfortunately, they came to you with NO design and NO idea on what colors they want to use. Why don't you come up with a function that returns a random hexadecimal color code so you don't have to think about it either.
+    function randomColor() {
+      var hexadecimal = "#";
+      var values = "ABCDEF0123456789";
+      for (var i = 0; i < 6; i++) {
+        var randomPick = Math.floor(Math.random() * 16); // picks index for the set of values, from 0th to 15th value
+        hexadecimal = hexadecimal + values[randomPick];
+      }
+      return hexadecimal;
+    }
+
+    console.log(randomColor());
+
 // myRobin: Write an Infinity Gauntlet program that randomly deletes and returns half of the elements in the input list when Thanos bounces a finger (when running the program)
     function thanos(array) {
       for (var i = array.length - 1; i > (array.length + 1) / 2; i--) {
@@ -73,3 +99,4 @@ function remainder(num1, num2) {
     }
 
     console.log(thanos([2, 3, 1, 6, 5, 7]));
+
