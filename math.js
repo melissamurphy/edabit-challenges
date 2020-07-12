@@ -63,6 +63,7 @@ function remainder(num1, num2) {
       }
     }
 
+
 //myRobin: Beginner programmer John Doe wants to make a program that adds and outputs each positive digit entered by the user (range is int). For instance, the result of 5528 is 20 and the result of 6714283 is 31.
     function addDigits(num) {
       var total = 0;
@@ -87,3 +88,15 @@ function remainder(num1, num2) {
     }
 
     console.log(randomColor());
+
+// myRobin: Write an Infinity Gauntlet program that randomly deletes and returns half of the elements in the input list when Thanos bounces a finger (when running the program)
+    function thanos(array) {
+      for (var i = array.length - 1; i > (array.length + 1) / 2; i--) {
+        var randomNum = Math.floor(Math.random() * (i + 1));
+        var randomItem = array.splice(randomNum, 1)[0];
+      }
+      return array;
+    }
+
+    console.log(thanos([2, 3, 1, 6, 5, 7]));
+
