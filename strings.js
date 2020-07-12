@@ -127,4 +127,17 @@ console.log(numScanner("3/2"))
 
 // group("()()()") ➞["()", "()", "()"]
 
-// group("((())())(()(()()))") ➞["((())())", "(()(()()))"]
+// group("((())()) (()(()()))") ➞["((())())", "(()(()()))"]
+
+function groupParens(string) {
+  var array = [];
+  for(var i=0; i<string.length; i++) {
+    if(string[i]==="(" && string[string.length-1]===")") {
+      if(string[i+1]!==string[i]) {
+        array.push(string.slice(0, i+2));
+        string = string.slice(i+2)
+      }
+    }
+  }
+  return array;
+}
