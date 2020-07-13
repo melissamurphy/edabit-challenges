@@ -51,3 +51,29 @@ function isMagic(array){
   }
   return true;
 }
+
+console.log(isMagic([
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]));
+
+console.log(isMagic([
+  [6, 1, 8],
+  [7, 5, 3],
+  [2, 9, 4]
+]));
+
+// myRobin: You've been practicing for an upcoming poker tournament. In terms of how to play the game, you're all set. But don't you want to impress everyone with some fancy deck shuffling? You can practice by creating a function that shuffles an array of items.
+var letterArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var randomIndex = Math.floor(Math.random() * (i + 1));
+    var valueToShuffle = array[i];
+    var randomValue = array[randomIndex];
+    array[i] = randomValue;
+    array[randomIndex] = valueToShuffle;
+  }
+  return array;
+}
+console.log(shuffleArray(letterArray));
