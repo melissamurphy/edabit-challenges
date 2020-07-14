@@ -147,8 +147,8 @@ function removeVowel(string){
   var wordArray = string.split(" ");
   var newArray = [];
     wordArray.forEach(word => {
-      for(var i=string.length-1; i>=0; i--){
-        if(string[i]==='a'||string[i]==='e'||string[i]==='i'||string[i]==='o'||string[i]==='u'){
+      for(var i=word.length-1; i>=0; i--){
+        if(word[i]==='a'||word[i]==='e'||word[i]==='i'||word[i]==='o'||word[i]==='u'){
           newArray.push(word.slice(0, i));
           break;
         }
@@ -157,5 +157,5 @@ function removeVowel(string){
         // } // there needs to be a way to include a word with no vowels (e.g. "why"), but this code is causing the loop to stop...
       }
     })
-    return newArray;
+    return newArray.join(' ');
 }
