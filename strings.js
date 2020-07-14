@@ -141,3 +141,21 @@ function groupParens(string) {
   }
   return array;
 }
+
+// myRobin: Time for something short and sweet - please write a function that removes the last vowel from each word in a sentence. Only remove the LAST instance of a vowel. For example, "moon" would turn into "mon".
+function removeVowel(string){
+  var wordArray = string.split(" ");
+  var newArray = [];
+    wordArray.forEach(word => {
+      for(var i=string.length-1; i>=0; i--){
+        if(string[i]==='a'||string[i]==='e'||string[i]==='i'||string[i]==='o'||string[i]==='u'){
+          newArray.push(word.slice(0, i));
+          break;
+        }
+        // else if(i=0){
+        //   newArray.push(word);
+        // } // there needs to be a way to include a word with no vowels (e.g. "why"), but this code is causing the loop to stop...
+      }
+    })
+    return newArray;
+}
