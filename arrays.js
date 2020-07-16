@@ -77,3 +77,14 @@ function shuffleArray(array) {
   return array;
 }
 console.log(shuffleArray(letterArray));
+
+// myRobin: Please write a function that returns true if your order is eligible for free shipping and false if it is not.
+function freeShipping(object) {
+  var sum = 0;
+  for (const property in object) {
+    sum = sum + object[property]
+  }
+  return (sum >= 30)
+}
+console.log(freeShipping({ "Pens": 4.99, "Notebook": 3.99 }))
+console.log(freeShipping({ "Laptop": 999.99 }))
