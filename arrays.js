@@ -88,3 +88,24 @@ function freeShipping(object) {
 }
 console.log(freeShipping({ "Pens": 4.99, "Notebook": 3.99 }))
 console.log(freeShipping({ "Laptop": 999.99 }))
+
+// myRobin: Each term in the Fibonacci sequence is the sum of the two preceding terms. If you start with 1 and 2, this sequence is:
+
+1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+
+What is the total number of all even numbers in the Fibonacci sequence that are less than 4, 000, 000 ?
+function fibonacci() {
+  var array = [1, 2];
+  var arraySum = 3;
+  var count = 1;
+  for (var i = 0; arraySum < 4000000; i++) {
+    array.push(array[i] + array[i + 1]);
+    arraySum = arraySum + array[i] + array[i + 1];
+    if (array[i + 2] % 2 == 0) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(fibonacci());
