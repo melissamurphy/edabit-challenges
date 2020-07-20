@@ -141,3 +141,23 @@ function groupParens(string) {
   }
   return array;
 }
+
+// myRobin: For instance: in JavaScript, you’d write yellowMonkey but in Python you’d write yellow_monkey. In case you forget, you should just build a function where you convert any string in Camel case to Pothole case.
+
+// myRobin: Write a function that returns the number of sock pairs you find in the pile. Two instances of the same letter, in our case, will represent a sock pair. For example, "ss".
+
+// The below will catch pairs assuming that pair members are adjacent.
+function pairs(string) {
+  var pairs = 0;
+  if (string.length <= 1) {
+    return pairs;
+  }
+  for(var i=0; i<string.length-1; i++){
+    if(string[i] === string[i+1]){
+      pairs++;
+    }
+  }
+  return pairs;
+}
+
+console.log(pairs("hhahh"));
