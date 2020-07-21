@@ -144,6 +144,10 @@ function groupParens(string) {
 
 // myRobin: For instance: in JavaScript, you’d write yellowMonkey but in Python you’d write yellow_monkey. In case you forget, you should just build a function where you convert any string in Camel case to Pothole case.
 
+function pothole(string) {
+
+}
+
 // myRobin: Write a function that returns the number of sock pairs you find in the pile. Two instances of the same letter, in our case, will represent a sock pair. For example, "ss".
 
 // Alphabetize the string by converting to array (split('')) and Sort'ing (then join(''))
@@ -163,3 +167,31 @@ function pairs(string) {
 }
 
 console.log(pairs("ammtaxt"));
+
+//Write a function to simulate this game! Pass in a number of petals. Return "Loves me, Loves me not, Loves me...etc". On the LAST phrase, write it in ALL CAPS.
+
+function doYouLoveMe(num) {
+  var string = "";
+  if (num <= 0) {
+    return string;
+  }
+  for (var currentNum = 0; currentNum < num - 1; currentNum++) {
+    if (currentNum % 2 === 0) {
+      string = string + "Loves me, "
+    } else {
+      string = string + "Loves me not, "
+    }
+  }
+  if (currentNum % 2 === 0) {
+    return string + "LOVES ME"
+  } else {
+    return string + "LOVES ME NOT"
+  }
+
+  // if num is 0 or less, then return empty sentence
+  // if last phrase, convert to all caps (toUpperCase());
+  // start with current num at 0
+  // last phrase is reached when current num reaches num (count up)
+}
+
+console.log(doYouLoveMe(4))
