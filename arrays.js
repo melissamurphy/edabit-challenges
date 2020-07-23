@@ -109,3 +109,19 @@ function fibonacci() {
 }
 
 console.log(fibonacci());
+
+// You and your friend go out to eat. You order dinner and she orders dessert. You decide to split the bill - you pay for the food items and she pays only for the dessert items.
+//If you have two arrays, one with the type of dishes ordered and one with the corresponding price, create a function that returns an array where the first element is the amount that YOU pay and the second element is that amount that YOUR FRIEND pays
+
+function splitTheBill(array1, array2) {
+  var myPay = 0;
+  var friendPay = 0;
+  for(var i=0; i < array1.length; i++){
+    if(array1[i]==="D") {
+      friendPay = friendPay + array2[i];
+    } else if (array1[i]==="F") {
+      myPay = myPay + array2[i];
+    }
+  }
+  return [myPay, friendPay];
+}
