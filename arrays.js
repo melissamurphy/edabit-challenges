@@ -125,3 +125,12 @@ function splitTheBill(array1, array2) {
   }
   return [myPay, friendPay];
 }
+
+// Can you write a function that takes an array of values and remove all duplicate elements in the array? Make sure to return the array with only the unique values remaining.
+
+function uniqueValues(array) {
+  array.sort();
+  // for(var i=0; i < array.length-1; i++) {
+  //   if(array[i])
+  // }
+}
