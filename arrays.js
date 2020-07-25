@@ -130,7 +130,11 @@ function splitTheBill(array1, array2) {
 
 function uniqueValues(array) {
   array.sort();
-  // for(var i=0; i < array.length-1; i++) {
-  //   if(array[i])
-  // }
+  var uniqueArray = [];
+  for(var i=0; i < array.length-1; i++) {
+    if(array[i] !== array[i+1]) {
+      uniqueArray.push(array[i]);
+    }
+  }
+  return uniqueArray;
 }
