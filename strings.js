@@ -200,8 +200,9 @@ console.log(doYouLoveMe(4))
 
 function whichCentury(string) {
   if (string[2] === "0" && string[3] == "0") {
-    return (string / 100 - 1).toFixed();;
-  } else return (string / 100).toFixed();
+    return (string / 100).toFixed();;
+  } else return Math.ceil(string / 100);
 }
 
+console.log(whichCentury("2000"))
 console.log(whichCentury("1900"))
