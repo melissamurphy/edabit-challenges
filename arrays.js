@@ -125,3 +125,20 @@ function splitTheBill(array1, array2) {
   }
   return [myPay, friendPay];
 }
+
+// Write a function that returns the number of users who are online in your slack channel. Please include the following features:
+function whoIsOnline(array) {
+  if (!array[0]) {
+    return "There is nobody online."
+  } else if (!array[1]) {
+    return array[0] + " online."
+  } else if (!array[2]) {
+    return array[0] + " and " + array[1] + " are online."
+  }
+  else return array[0] + ", " + array[1] + ", " + "and " + (array.length - 2) + " more are online."
+}
+
+console.log(whoIsOnline([]))
+console.log(whoIsOnline(["Melissa", "Tiffany"]))
+console.log(whoIsOnline(["Melissa", "Tiffany", "Vlad"]))
+console.log(whoIsOnline([
