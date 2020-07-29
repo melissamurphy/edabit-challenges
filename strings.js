@@ -210,7 +210,11 @@ console.log(whichCentury("1900"))
 function alternateCase(string) {
   string = string.toLowerCase();;
   for (var i = 1; i < string.length; i++) {
-    if (string.charCodeAt(i - 1) > 96) {
+    iPriorLetter = i - 1;
+    if (string.charCodeAt(iPriorLetter) === 32) {
+      iPriorLetter = i - 2;
+    }
+    if (string.charCodeAt(iPriorLetter) > 96) {
       console.log("it was lowercase")
       string = string.slice(0, i) + string[i].toUpperCase() + string.slice(i + 1, string.length)
     } else {
@@ -221,4 +225,4 @@ function alternateCase(string) {
   return string;
 }
 
-console.log(alternateCase("HELLO"))
+console.log(alternateCase("hello kitty"))
