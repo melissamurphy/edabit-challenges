@@ -113,7 +113,11 @@ function remainder(num1, num2) {
     }
     {
       for(var i=1; i<10; i++) {
-        if
+        if(num+i+''===reverse(num+i+'')){
+          return num+i;
+        } else if (num - i + '' === reverse(num - i + '')) {
+          return num - i;
+        }
       }
     }
 
