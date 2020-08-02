@@ -226,3 +226,14 @@ function alternateCase(string) {
 }
 
 console.log(alternateCase("hello kitty"))
+
+// Do you remember how to write a function that removes the last vowel from each word in a sentence? You must only remove the LAST instance of a vowel. For example, "book" would turn into "bok".
+
+function noLastVowel(sentence) {
+  for(var i = sentence.length-1; i--; i>=0) {
+    if (sentence[i] === "a" || sentence[i] === "A" || sentence[i]==="e" || sentence[i]==="i" || sentence[i]==="o" || sentence[i]==="u") {
+      return sentence.slice(0, i) + sentence.slice(i+1, sentence.length);
+    }
+  }
+  return sentence;
+}
