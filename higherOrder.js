@@ -11,3 +11,15 @@ function transformUpvotes(str) {
   })
   return newArray;
 }
+
+class fifo {
+  constructor() {
+    this.queue = [];
+  }
+  add(element) {
+    this.queue.push(element);
+  }
+  remove(element) {
+    this.queue.shift(element);
+  }
+}
