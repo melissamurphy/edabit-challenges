@@ -237,3 +237,33 @@ function noLastVowel(sentence) {
   }
   return sentence;
 }
+
+//myRobin: Write a function that takes a string and returns a coded version of the string.Your function should replace all 'a's with '4's, 'e's with '3's, 'i's with '1's, 'o's with '0's, and 's's with '5's.
+function leetCoder(string) {
+  // string = string.toLowerCase().split(' ').join('');
+  for (var i = 0; i < string.length; i++) {
+    switch(string[i]) {
+      case 'a':
+      case 'A':
+        string = string.slice(0, i) +'4' + string.slice(i+1, string.length);
+      break;
+      case 'e':
+      case 'E':
+        string = string.slice(0, i) + '3' + string.slice(i + 1, string.length);
+      break;
+      case 'i':
+      case 'I':
+        string = string.slice(0, i) + '1' + string.slice(i + 1, string.length);
+      break;
+      case 'o':
+      case 'O':
+        string = string.slice(0, i) + '0' + string.slice(i + 1, string.length);
+      break;
+      case 's':
+      case 'S':
+        string = string.slice(0, i) + '5' + string.slice(i + 1, string.length);
+
+    }
+  }
+  return string;
+}
