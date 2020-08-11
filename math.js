@@ -102,11 +102,12 @@ function remainder(num1, num2) {
 
 // Today's prompt is simple - write a function to determine how many days are left until Christmas
 
-function daysToChristmas(){
-  const christmasTime = new Date('2020, 11, 25').getTime();
-  var today = new Date().getTime();
+    function daysToChristmas() {
+      const christmasTime = new Date("2020, 11, 25").getTime();
+      var today = new Date().getTime();
 
-  var msDifference = today - christmastTime;;
-  var days = msDifference / 8.64e+7;
-
-}
+      var msDifference = christmasTime - today;
+      var daysDifference = msDifference / 8.64e7;
+      return daysDifference;
+    }
+    console.log(daysToChristmas());
