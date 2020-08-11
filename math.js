@@ -26,7 +26,7 @@ function intWithinBounds(n, lower, upper) {
 // false if n is less than lower
 
 
-<<<<<<< HEAD
+
 function fizzBuzzFuzz(num1, num2) {
   for(var x = num1; num1 <= num2; num1++) {
     if(num1%3===0){
@@ -101,6 +101,19 @@ function remainder(num1, num2) {
 
     console.log(thanos([2, 3, 1, 6, 5, 7]));
 
+
+// Today's prompt is simple - write a function to determine how many days are left until Christmas
+
+    function daysToChristmas() {
+      const christmasTime = new Date("2020, 11, 25").getTime();
+      var today = new Date().getTime();
+
+      var msDifference = christmasTime - today;
+      var daysDifference = msDifference / 8.64e7;
+      return daysDifference;
+    }
+    console.log(daysToChristmas());
+
     //Palindromes come up a lot during technical interviews. A numerical palindrome is a number that reads the same in reverse as it reads normally. Can you remember how to write a function that returns the closest palindrome to any number of your choice? If your number is exactly in between two palindromes, return the smaller number. If the number you chose IS a palindrome, return itself. Have fun!
 
     function palindrome(num)
@@ -127,3 +140,4 @@ function numPalindrome(num) {
     // return num.replace(num[num.length-1, num[0]])
   }
 }
+
