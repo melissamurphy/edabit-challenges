@@ -267,3 +267,10 @@ function leetCoder(string) {
   return string;
 }
 console.log(leetCoder("I am a leet coder"))
+
+// Today's problem is short and to the point: Write a function that takes a string and returns the string in reversed order.
+function reverseString(string) {
+  string = string.split('').reverse().join('');
+  return string;
+}
+console.log(reverseString("Reverse this string"));
