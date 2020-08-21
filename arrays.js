@@ -141,4 +141,8 @@ function whoIsOnline(array) {
 console.log(whoIsOnline([]))
 console.log(whoIsOnline(["Melissa", "Tiffany"]))
 console.log(whoIsOnline(["Melissa", "Tiffany", "Vlad"]))
-console.log(whoIsOnline([
+
+// Return first value of array
+function getFirstValue(array){
+  return array[0];
+}
