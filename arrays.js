@@ -1,3 +1,7 @@
+// Create a function that takes an array of numbers or letters and returns a string.
+function arrayToString(arr) {
+  return arr.join(''); // do not forget quotes as an argument or else JS will put commas in your returned string
+}
 // Create a function which returns the number of true values there are in an array.
 // https://edabit.com/challenge/GLbuMfTtDWwDv2F73
 
