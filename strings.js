@@ -292,3 +292,13 @@ function isXoEqual(string) {
 }
 
 console.log(isXoEqual("xoxo"))
+
+// The challenge is to try and fix this buggy code, given the inputs true and false. See the examples below for the expected output.
+// https://edabit.com/challenge/r2MbSxquAGPnDkjQx
+function has_bugs(buggy_code) {
+  if (buggy_code) {
+    return "sad days"
+  } else {
+    return "it's a good day"
+  }
+}
