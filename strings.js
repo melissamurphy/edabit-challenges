@@ -302,3 +302,8 @@ function has_bugs(buggy_code) {
     return "it's a good day"
   }
 }
+
+//https://edabit.com/challenge/yHGowWucg3k2kJdZ4
+function comp(str1, str2) {
+  return str1.length === str2.length;
+}
