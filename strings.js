@@ -303,7 +303,12 @@ function has_bugs(buggy_code) {
   }
 }
 
-//https://edabit.com/challenge/yHGowWucg3k2kJdZ4
+// https://edabit.com/challenge/yHGowWucg3k2kJdZ4
 function comp(str1, str2) {
   return str1.length === str2.length;
+}
+
+// https://edabit.com/challenge/QSnaSH5S3oxZkwcNc
+function isSameNum(num1, num2) {
+  return num1 === num2
 }
