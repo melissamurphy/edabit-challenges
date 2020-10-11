@@ -150,3 +150,12 @@ console.log(whoIsOnline(["Melissa", "Tiffany", "Vlad"]))
 function getFirstValue(array){
   return array[0];
 }
+
+// Write a function to reverse an array.
+function reverse(arr) {
+  let newArray = [];
+  for (var i = 0; i < arr.length; i++) {
+    newArray.unshift(arr[i])
+  }
+  return newArray;
+}
