@@ -150,3 +150,17 @@ console.log(whoIsOnline(["Melissa", "Tiffany", "Vlad"]))
 function getFirstValue(array){
   return array[0];
 }
+
+// Given an array of women and an array of men, either: Return "sizes don't match" if the two arrays have different sizes. If the sizes match, return a array of pairs, with the first woman paired with the first man, second woman paired with the second man, etc.
+function zipIt(women, men) {
+  let newArray = [];
+  if(women.length === men.length){
+    for(var i=0; i<women.length; i++){
+      newArray.push([women[i], men[i]]);
+    }
+    return newArray;
+  }
+  else {
+    return "sizes don't match"
+  }
+}
