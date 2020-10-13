@@ -151,6 +151,7 @@ function getFirstValue(array){
   return array[0];
 }
 
+
 // Given an array of women and an array of men, either: Return "sizes don't match" if the two arrays have different sizes. If the sizes match, return a array of pairs, with the first woman paired with the first man, second woman paired with the second man, etc.
 function zipIt(women, men) {
   let newArray = [];
@@ -163,4 +164,13 @@ function zipIt(women, men) {
   else {
     return "sizes don't match"
   }
+
+// Write a function to reverse an array.
+function reverse(arr) {
+  let newArray = [];
+  for (var i = 0; i < arr.length; i++) {
+    newArray.unshift(arr[i])
+  }
+  return newArray;
+
 }
