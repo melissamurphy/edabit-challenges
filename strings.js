@@ -312,3 +312,8 @@ function comp(str1, str2) {
 function isSameNum(num1, num2) {
   return num1 === num2
 }
+
+// https://edabit.com/challenge/vJCZmgvvDjehyDcDK JavaScript has a logical operator &&. The && operator takes two boolean values, and returns true if both values are true.
+function and(a, b) {
+	return a&&b;
+}
