@@ -174,3 +174,9 @@ function reverse(arr) {
   return newArray;
 
 }
+
+// Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+// https://edabit.com/challenge/Q3n42rEWanZSTmsJm
+function minMax(arr) {
+    return [Math.min(...arr), Math.max(...arr)];
+}
