@@ -317,3 +317,9 @@ function isSameNum(num1, num2) {
 function and(a, b) {
 	return a&&b;
 }
+
+// https://edabit.com/challenge/EzbfiquDoAc2Zc9FL Create a function that returns true if a string is empty and false otherwise.
+// A string containing only whitespaces " " does not count as empty.
+function isEmpty(s) {
+  return s.length === 0;
+}
