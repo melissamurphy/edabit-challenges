@@ -180,3 +180,11 @@ function reverse(arr) {
 function minMax(arr) {
     return [Math.min(...arr), Math.max(...arr)];
 }
+
+// Given two arguments, return an array which contains these two arguments. https://edabit.com/challenge/BFnsRqe8PFvEwcRNt
+  function makePair(num1, num2) {
+    let array = [];
+    array.push(num1);
+    array.push(num2);
+    return array;
+  }
