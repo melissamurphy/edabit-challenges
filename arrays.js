@@ -188,3 +188,13 @@ function minMax(arr) {
     array.push(num2);
     return array;
   }
+
+  function calculateLosses(obj) {
+    const array = Object.values(obj);
+    const stolen = array.reduce((accumulator, currentValue) => accumulator + currentValue)
+    if (stolen === 0) {
+      return "Lucky you!"
+    } else {
+      return stolen;
+    }
+  }
