@@ -198,3 +198,18 @@ function minMax(arr) {
       return stolen;
     }
   }
+
+// You call your spouse to inform his/her most precious item is gone! Given an object of stolen items, return the most expensive item on the list.
+// https://edabit.com/challenge/yMEs8bXPyZenPEYLM
+
+  function mostExpensiveItem(obj) {
+    var highestValue = null;
+    var highestItem = null;
+    for (const property in obj) {
+      if (obj[property] > highestValue) {
+        highestValue = obj[property];
+        highestItem = property;
+      }
+    }
+    return highestItem;
+  }
