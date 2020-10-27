@@ -213,3 +213,12 @@ function minMax(arr) {
     }
     return highestItem;
   }
+
+  function findIt(obj, name) {
+    if (obj.hasOwnProperty(name)) {
+      return "" + name + " is gone..."
+    }
+    else {
+      return "" + name + " is here!"
+    }
+  }
