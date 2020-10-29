@@ -222,3 +222,8 @@ function minMax(arr) {
       return "" + name + " is here!"
     }
   }
+
+  function addName(obj, name, value) {
+    obj[name] = value;
+    return obj;
+  }
