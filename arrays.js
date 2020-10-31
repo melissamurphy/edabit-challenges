@@ -227,3 +227,10 @@ function minMax(arr) {
     obj[name] = value;
     return obj;
   }
+
+// Burglary Series 07
+// Your spouse wants a copy of the stolen items. Given an object containing the stolen items, return a copy of that list.
+function makeCopy(obj) {
+  let objCopy = Object.assign({}, obj);
+  return objCopy;
+  }
