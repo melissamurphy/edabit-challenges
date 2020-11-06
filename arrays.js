@@ -253,3 +253,15 @@ function makeCopy(obj) {
     delete objCopy[itemName];
     return objCopy;
   }
+
+// Burglary Series 09 Filter Values
+//  Given an object with a list of the stolen items, return a copy of that list without the values below 5000.
+function filterValues(obj) {
+    let objCopy = {};
+    for (let key in obj) {
+      if (obj[key] >= 5000) {
+        objCopy[key] = obj[key];
+      }
+    }
+    return objCopy;
+  }
