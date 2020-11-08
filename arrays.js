@@ -265,3 +265,13 @@ function filterValues(obj) {
     }
     return objCopy;
   }
+
+// Burglary Series 10 Calculate Difference
+// Given an object of the stolen items and a limit, return the difference between the total value of those items and the limit of the policy.
+  function calculateDifference(obj, limit) {
+    let sumValue = 0;
+    for (let key in obj) {
+      sumValue = sumValue + obj[key];
+    }
+    return sumValue - limit;
+  }
