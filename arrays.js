@@ -268,6 +268,10 @@ function filterValues(obj) {
 
 // Burglary Series 10 Calculate Difference
 // Given an object of the stolen items and a limit, return the difference between the total value of those items and the limit of the policy.
+// https://edabit.com/user/8Z3dkvWBqtrMEE48N
+  function calculateDifference(obj, limit) {
+    let sum = Object.values(obj).reduce((accumulator, currentValue) => accumulator + currentValue)
+    return sum - limit;
   function calculateDifference(obj, limit) {
     let sumValue = 0;
     for (let key in obj) {
