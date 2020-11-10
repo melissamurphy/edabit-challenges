@@ -272,4 +272,10 @@ function filterValues(obj) {
   function calculateDifference(obj, limit) {
     let sum = Object.values(obj).reduce((accumulator, currentValue) => accumulator + currentValue)
     return sum - limit;
+  function calculateDifference(obj, limit) {
+    let sumValue = 0;
+    for (let key in obj) {
+      sumValue = sumValue + obj[key];
+    }
+    return sumValue - limit;
   }
