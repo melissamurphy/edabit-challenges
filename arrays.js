@@ -279,3 +279,11 @@ function filterValues(obj) {
     }
     return sumValue - limit;
   }
+
+// Burglary Series (11): Say What
+// Given an object with always the exact same 3 keys, return a string that concatenates all the values and adds the 2nd key at the end. Make sure you keep an empty space between them but not at the beginning or end of the string
+    function sayWhat(obj) {
+      let array = Object.values(obj);
+      array.push(array[1]);
+      return array.join(" ");
+    }
