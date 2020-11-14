@@ -287,3 +287,9 @@ function filterValues(obj) {
       array.push(array[1]);
       return array.join(" ");
     }
+
+// Burglary Series (14): Adjectives Total
+// Count the total amount of adjectives used. Given an object with a list of adjectives, return the total amount of adjectives used.
+    function totalAmountAdjectives(obj) {
+      return Object.keys(obj).length;
+    }
