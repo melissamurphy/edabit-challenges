@@ -293,3 +293,20 @@ function filterValues(obj) {
     function totalAmountAdjectives(obj) {
       return Object.keys(obj).length;
     }
+
+// Burglary Series (15)
+// To further increase the statistical knowledge of your fight, count the number of times a certain adjective was used.
+// Given an object that contains several adjectives as values, return a new object where you count the ocurrences of each adjective.
+
+
+    function countNumberOfOccurrences(obj) {
+      let newObj = {};
+      for (let key in obj) {
+        if (newObj.hasOwnProperty(obj[key])) {
+          newObj[obj[key]]++;
+        } else {
+          newObj[obj[key]] = 1;
+        }
+      }
+      return newObj;
+    }
