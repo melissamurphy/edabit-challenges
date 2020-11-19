@@ -188,7 +188,7 @@ function minMax(arr) {
     array.push(num2);
     return array;
   }
-
+// Burglary 01
   function calculateLosses(obj) {
     const array = Object.values(obj);
     const stolen = array.reduce((accumulator, currentValue) => accumulator + currentValue)
@@ -199,6 +199,7 @@ function minMax(arr) {
     }
   }
 
+// Burglary 02
 // You call your spouse to inform his/her most precious item is gone! Given an object of stolen items, return the most expensive item on the list.
 // https://edabit.com/challenge/yMEs8bXPyZenPEYLM
 
@@ -214,6 +215,7 @@ function minMax(arr) {
     return highestItem;
   }
 
+// Burglary 03
   function findIt(obj, name) {
     if (obj.hasOwnProperty(name)) {
       return "" + name + " is gone..."
@@ -223,10 +225,14 @@ function minMax(arr) {
     }
   }
 
+// Burglary 04
   function addName(obj, name, value) {
     obj[name] = value;
     return obj;
   }
+
+// Burglary 05
+
 
 // Burglary Series 07
 // Your spouse wants a copy of the stolen items. Given an object containing the stolen items, return a copy of that list.
