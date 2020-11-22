@@ -234,7 +234,16 @@ function minMax(arr) {
 // Burglary 05
 
 
-// Burglary Series 07
+// Burglaryfunction thirdMostExpensive(obj) {
+	let values = Object.values(obj);
+	values.sort();
+	let third = values[2]
+	for(let key in obj){
+		if(obj[key]==2){
+			return key;
+		}
+	}
+} Series 07
 // Your spouse wants a copy of the stolen items. Given an object containing the stolen items, return a copy of that list.
 function makeCopy(obj) {
   let objCopy = Object.assign({}, obj);
