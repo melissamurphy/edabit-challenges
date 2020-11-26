@@ -232,9 +232,7 @@ function minMax(arr) {
   }
 
 // Burglary 05
-
-
-  // Burglaryfunction thirdMostExpensive(obj) {
+  function thirdMostExpensive(obj) {
   let values = Object.values(obj);
   values.sort();
   let third = values[2]
@@ -243,7 +241,18 @@ function minMax(arr) {
       return key;
     }
   }
-} Series 07
+}
+
+// Burglary Series 06
+// You prepare a list to send to the insurance company. As you finish, you notice you misformatted it. Given an object with at least one key/value pair, convert all the values to numbers.
+  function convertToNumber(obj) {
+    for (let key in obj) {
+      obj[key] = Number(obj[key]);
+    }
+    return obj;
+  }
+
+// Burglary Series 07
 // Your spouse wants a copy of the stolen items. Given an object containing the stolen items, return a copy of that list.
 function makeCopy(obj) {
   let objCopy = Object.assign({}, obj);
