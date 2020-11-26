@@ -232,18 +232,27 @@ function minMax(arr) {
   }
 
 // Burglary 05
+  function thirdMostExpensive(obj) {
+  let values = Object.values(obj);
+  values.sort();
+  let third = values[2]
+  for (let key in obj) {
+    if (obj[key] == 2) {
+      return key;
+    }
+  }
+}
 
+// Burglary Series 06
+// You prepare a list to send to the insurance company. As you finish, you notice you misformatted it. Given an object with at least one key/value pair, convert all the values to numbers.
+  function convertToNumber(obj) {
+    for (let key in obj) {
+      obj[key] = Number(obj[key]);
+    }
+    return obj;
+  }
 
-// Burglaryfunction thirdMostExpensive(obj) {
-	let values = Object.values(obj);
-	values.sort();
-	let third = values[2]
-	for(let key in obj){
-		if(obj[key]==2){
-			return key;
-		}
-	}
-} Series 07
+// Burglary Series 07
 // Your spouse wants a copy of the stolen items. Given an object containing the stolen items, return a copy of that list.
 function makeCopy(obj) {
   let objCopy = Object.assign({}, obj);
@@ -327,3 +336,8 @@ function filterValues(obj) {
     }
 
 // Burglary Series (16):
+function determineWhoCursedTheMost(obj) {
+	let innerObjsArray = Object.values(obj);
+	// let reducer = one variable to track total sum of all first and one to track the second's
+	innerObjsArray.reduce(reducer)
+}
