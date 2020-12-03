@@ -312,6 +312,8 @@ function filterValues(obj) {
       return array.join(" ");
     }
 
+// Burglary Series 12
+
 // Burglary Series (14): Adjectives Total
 // Count the total amount of adjectives used. Given an object with a list of adjectives, return the total amount of adjectives used.
     function totalAmountAdjectives(obj) {
@@ -337,7 +339,18 @@ function filterValues(obj) {
 
 // Burglary Series (16):
 function determineWhoCursedTheMost(obj) {
-	let innerObjsArray = Object.values(obj);
+  let innerObjsArray = Object.values(obj);
+  // [{me:10, spouse: 5}, {}, {}]
 	// let reducer = one variable to track total sum of all first and one to track the second's
-	innerObjsArray.reduce(reducer)
+  // innerObjsArray.reduce(reducer)
+
+  let meSum = 0;
+  let spouseSum = 0;
+  for (index = 0; index < innerObjsArray.length; index++) {
+    meSum = meSum + innerObjsArray[index].me;
+    spouseSum = spouseSum + innerObjsArray[index].spouse;
+  }
+  if(meSum>spouseSum){
+    return "ME!";
+  }
 }
