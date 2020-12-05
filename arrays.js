@@ -352,5 +352,9 @@ function determineWhoCursedTheMost(obj) {
   }
   if(meSum>spouseSum){
     return "ME!";
+  } else if(spouseSum>meSum){
+    return "SPOUSE!"
+  } else {
+    return "DRAW!"
   }
 }
