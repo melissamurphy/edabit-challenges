@@ -358,3 +358,7 @@ function determineWhoCursedTheMost(obj) {
     return "DRAW!"
   }
 }
+
+// Burglary Series(17): Who is the Winner ?
+// The fight between you and your spouse is over. Based on your perception of how the fight went, determine who won.
+// Given an object with three rounds, with nested objects as your points per round, determine the winner by counting who won the most rounds. The winner of the round is whoever scored the most points in that round. Draws are possible, both in rounds as in the final result.
