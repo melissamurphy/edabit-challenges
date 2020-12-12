@@ -362,3 +362,28 @@ function determineWhoCursedTheMost(obj) {
 // Burglary Series(17): Who is the Winner ?
 // The fight between you and your spouse is over. Based on your perception of how the fight went, determine who won.
 // Given an object with three rounds, with nested objects as your points per round, determine the winner by counting who won the most rounds. The winner of the round is whoever scored the most points in that round. Draws are possible, both in rounds as in the final result.
+// Keep track of my total wins in one variable and spouse's wins in another variable
+// Access entries (first-nested object)
+// Access each entry's entries to find the 'winner' for that win and increment my/spouse's variable accordingly
+// * Winner is found my comparing first and second entries for higher value; if first is higher, I win; if second higher, spouse wins; if equal, it's a draw
+// After looping through each entry's entries, compare my total wins variable to spouse's, then return the winner
+
+    function determineWinnerOfFight(obj) {
+      let myWins=0; spouseWins=0;
+      let array = Object.values(obj);
+      function roundWinner(obj){
+        if(obj.me > obj.spouse){
+          myWins++;
+        } else if (obj.spouse > obj.me){
+          spouseWins++;
+        }
+      }
+      array.forEach(roundWinner);
+      if(myWins > spouseWins) {
+        return "ME!"
+      } else if(spouseWins > myWins) {
+        return "SPOUSE!"
+      } else {
+        return "NOBODY!"
+      }
+    }
