@@ -379,11 +379,20 @@ function determineWhoCursedTheMost(obj) {
         }
       }
       array.forEach(roundWinner);
-      if(myWins > spouseWins) {
-        return "ME!"
-      } else if(spouseWins > myWins) {
-        return "SPOUSE!"
-      } else {
-        return "NOBODY!"
-      }
+
+      // if(myWins > spouseWins) {
+      //   return "ME!"
+      // } else if(spouseWins > myWins) {
+      //   return "SPOUSE!"
+      // } else {
+      //   return "NOBODY!"
+      // }
+
+      return (myWins > spouseWins) ?
+        "ME!"
+        : (spouseWins > myWins) ?
+        "SPOUSE!"
+        :
+        "NOBODY!"
+
     }
