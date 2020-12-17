@@ -388,7 +388,6 @@ function determineWhoCursedTheMost(obj) {
       //   return "NOBODY!"
       // }
 
-      return myWins > spouseWins ? "ME!" : spouseWins > myWins ?
-        "SPOUSE!" : "NOBODY!"
+      return myWins > spouseWins ? "ME!" : spouseWins > myWins ? "SPOUSE!" : "NOBODY!"
 
     }
