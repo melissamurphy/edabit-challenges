@@ -328,11 +328,12 @@ function filterValues(obj) {
     function countNumberOfOccurrences(obj) {
       let newObj = {};
       for (let key in obj) {
-        if (newObj.hasOwnProperty(obj[key])) {
-          newObj[obj[key]]++;
-        } else {
-          newObj[obj[key]] = 1;
-        }
+        // if (newObj.hasOwnProperty(obj[key])) {
+        //   newObj[obj[key]]++;
+        // } else {
+        //   newObj[obj[key]] = 1;
+        // }
+        newObj.hasOwnProperty(obj[key]) ? newObj[obj[key]]++ : newObj[obj[key]] = 1;
       }
       return newObj;
     }
@@ -350,13 +351,15 @@ function determineWhoCursedTheMost(obj) {
     meSum = meSum + innerObjsArray[index].me;
     spouseSum = spouseSum + innerObjsArray[index].spouse;
   }
-  if(meSum>spouseSum){
-    return "ME!";
-  } else if(spouseSum>meSum){
-    return "SPOUSE!"
-  } else {
-    return "DRAW!"
-  }
+  // if(meSum>spouseSum){
+  //   return "ME!";
+  // } else if(spouseSum>meSum){
+  //   return "SPOUSE!"
+  // } else {
+  //   return "DRAW!"
+  // }
+
+  return meSum > spouseSum ? "ME!" : spouseSum > meSum ? "SPOUSE!" : "DRAW!"
 }
 
 // Burglary Series(17): Who is the Winner ?
@@ -388,6 +391,6 @@ function determineWhoCursedTheMost(obj) {
       //   return "NOBODY!"
       // }
 
-      return myWins > spouseWins ? "ME!" : spouseWins > myWins ? "SPOUSE!" : "NOBODY!"
+      return myWins > spouseWins ? "ME!" : spouseWins > myWins ? "SPOUSE!" : "NOBODY!";
 
     }
