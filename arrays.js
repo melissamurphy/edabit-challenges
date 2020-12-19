@@ -373,7 +373,7 @@ function determineWhoCursedTheMost(obj) {
 
     function determineWinnerOfFight(obj) {
       let myWins=0; spouseWins=0;
-      let array = Object.values(obj);
+      // let array = Object.values(obj); returns an array containing the inputted object's *own properties* (in contrast to the prototype's properties, as included in a for-in)
       function roundWinner(obj){
         if(obj.me > obj.spouse){
           myWins++;
@@ -381,7 +381,7 @@ function determineWhoCursedTheMost(obj) {
           spouseWins++;
         }
       }
-      array.forEach(roundWinner);
+      Object.values(obj).array.forEach(roundWinner);
 
       // if(myWins > spouseWins) {
       //   return "ME!"
