@@ -252,15 +252,8 @@ function minMax(arr) {
     return obj;
   }
 
-// Burglary Series 07
-// Your spouse wants a copy of the stolen items. Given an object containing the stolen items, return a copy of that list.
-function makeCopy(obj) {
-  let objCopy = Object.assign({}, obj);
-  return objCopy;
-  }
-
-// Burglary Series 06
-// You prepare a list to send to the insurance company. As you finish, you notice you misformatted it. Given an object with at least one key/value pair, convert all the values to numbers.
+  // Burglary Series 06
+  // You prepare a list to send to the insurance company. As you finish, you notice you misformatted it. Given an object with at least one key/value pair, convert all the values to numbers.
   function convertToNumber(obj) {
     var obj2 = {};
     for (var prop in obj) {
@@ -269,9 +262,15 @@ function makeCopy(obj) {
     return obj2;
   }
 
+// Burglary Series 07
+// Your spouse wants a copy of the stolen items. Given an object containing the stolen items, return a copy of that list.
+function makeCopy(obj) {
+  let objCopy = Object.assign({}, obj);
+  return objCopy;
+  }
+
 // Burglary Series 08
 // Your spouse tells you that one of the items on the list wasn't stolen, it is in your castle in Transilvania. Given an object of the stolen items and an item name, return a copy without that item on the list.
-
   function removeEntry(obj, itemName) {
     let objCopy = Object.assign({}, obj);
     delete objCopy[itemName];
@@ -312,7 +311,11 @@ function filterValues(obj) {
       return array.join(" ");
     }
 
-// Burglary Series 12
+// Burglary Series (12): Get Vodka Bottle
+// The insurance guy laughs, he's just kidding. He just needs an updated list. You just need one of those Rammstein Vodka bottles.
+// Given an object with alcoholic drinks and a number, return a string with the name of the Rammstein bottle that matches the given number.
+
+
 
 // Burglary Series (14): Adjectives Total
 // Count the total amount of adjectives used. Given an object with a list of adjectives, return the total amount of adjectives used.
@@ -323,8 +326,6 @@ function filterValues(obj) {
 // Burglary Series (15)
 // To further increase the statistical knowledge of your fight, count the number of times a certain adjective was used.
 // Given an object that contains several adjectives as values, return a new object where you count the ocurrences of each adjective.
-
-
     function countNumberOfOccurrences(obj) {
       let newObj = {};
       for (let key in obj) {
