@@ -381,6 +381,7 @@ function determineWhoCursedTheMost(obj) {
         } else if (obj.spouse > obj.me){
           spouseWins++;
         }
+      // obj.me > obj.spouse ? myWins++ : obj.spouse > obj.me ? spouseWins++
       }
       Object.values(obj).array.forEach(roundWinner);
 
