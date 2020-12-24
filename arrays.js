@@ -314,7 +314,9 @@ function filterValues(obj) {
 // Burglary Series (12): Get Vodka Bottle
 // The insurance guy laughs, he's just kidding. He just needs an updated list. You just need one of those Rammstein Vodka bottles.
 // Given an object with alcoholic drinks and a number, return a string with the name of the Rammstein bottle that matches the given number.
-
+    function getVodkaBottle(obj, num) {
+      // filter to Rammstein-only array and loop through that array until matching number is found, then return the key name
+    }
 
 
 // Burglary Series (14): Adjectives Total
@@ -381,6 +383,7 @@ function determineWhoCursedTheMost(obj) {
         } else if (obj.spouse > obj.me){
           spouseWins++;
         }
+      // obj.me > obj.spouse ? myWins++ : obj.spouse > obj.me ? spouseWins++
       }
       Object.values(obj).array.forEach(roundWinner);
 
