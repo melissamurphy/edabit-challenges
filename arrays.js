@@ -316,6 +316,11 @@ function filterValues(obj) {
 // Given an object with alcoholic drinks and a number, return a string with the name of the Rammstein bottle that matches the given number.
     function getVodkaBottle(obj, num) {
       // filter to Rammstein-only array and loop through that array until matching number is found, then return the key name
+      for(let key in obj){
+        if(num === obj[key] && key.includes("Rammstein")){
+          return key;
+        }
+      }
     }
 
 
