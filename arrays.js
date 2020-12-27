@@ -316,8 +316,19 @@ function filterValues(obj) {
 // Given an object with alcoholic drinks and a number, return a string with the name of the Rammstein bottle that matches the given number.
     function getVodkaBottle(obj, num) {
       // filter to Rammstein-only array and loop through that array until matching number is found, then return the key name
+      for(let key in obj){
+        if(num === obj[key] && key.includes("Rammstein")){
+          return key;
+        }
+      }
     }
 
+// Burglary Series (13): Sort That List
+// The insurance guy tells you he needs an updated list of the stolen goods, and surely only to annoy you, he adds, "in reverse alphabetical order".
+// Given an object with the stolen items, return a new object with the list in reverse alphabetical order.
+    function sortList(obj) {
+
+    }
 
 // Burglary Series (14): Adjectives Total
 // Count the total amount of adjectives used. Given an object with a list of adjectives, return the total amount of adjectives used.
