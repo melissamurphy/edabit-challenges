@@ -327,7 +327,12 @@ function filterValues(obj) {
 // The insurance guy tells you he needs an updated list of the stolen goods, and surely only to annoy you, he adds, "in reverse alphabetical order".
 // Given an object with the stolen items, return a new object with the list in reverse alphabetical order.
     function sortList(obj) {
-
+      // create array of keys of given obj with Object.keys(obj)
+      // put keys of given obj into alphabetical order with sort method for strings
+      // create a new empty object
+      // loop through the array of alphabetized keys starting at the END, signified by array.length (i.e. at the alphabetically last letter)
+      // at each index, add a property to newObj with array[index] as the key and obj[array][index] as the property value
+      // newObj will have the given obj/array's alphabetically last key as the first, with the property value assigned as the obj[key], where key is array[index] and property is obj[array][index]
     }
 
 // Burglary Series (14): Adjectives Total
