@@ -480,8 +480,12 @@ function signYourName(obj) {
 // You finally receive the entire stolen list document from the police.You need to sign at the end of the document but also each sub - list corresponding to each room in your house where the items were stolen.
 // You are given two arguments, one object with nested objects and a string that corresponds to your name.The object already contains several signature properties, one on the root, the others on each nested object.Return an object with all containing signature values set to your name.
     function signAll(obj, name) {
-      // make an array of the key-value pairs nested in the obj variable
-      // loop through each key until "signature" is found
-      // when found, set the value to the name variable
-      // Object.fromEntries() can take an array and turn it into an object
+      for (const [key, value] of Object.entries(obj)) {
+        if (key === "signature") {
+          obj[key] = name;
+        } else {
+          obj[key].signature = name;
+        }
+      }
+      return obj;
     }
