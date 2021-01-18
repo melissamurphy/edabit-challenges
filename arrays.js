@@ -489,3 +489,11 @@ function signYourName(obj) {
       }
       return obj;
     }
+
+//  Burglary Series (23): Find and Remove
+// The insurance guy calls. They were about to pay you all that fortune you've been anxiously waiting for, but they detected further irregularities; the list of stolen items is misformatted and appears to contain other entries that don't belong there. Find and remove them.
+// You receive an object with nested objects with strings as values. Convert their values to number and return an object without the entries that evaluate to NaN.
+
+    function findAndRemove(obj) {
+
+    }
