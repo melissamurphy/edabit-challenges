@@ -481,6 +481,8 @@ function signYourName(obj) {
 // You are given two arguments, one object with nested objects and a string that corresponds to your name.The object already contains several signature properties, one on the root, the others on each nested object.Return an object with all containing signature values set to your name.
     function signAll(obj, name) {
       for (const [key, value] of Object.entries(obj)) {
+        // key === "signature" ? obj[key] = name : obj[key].signature = name;
+
         if (key === "signature") {
           obj[key] = name;
         } else {
@@ -488,4 +490,12 @@ function signYourName(obj) {
         }
       }
       return obj;
+    }
+
+//  Burglary Series (23): Find and Remove
+// The insurance guy calls. They were about to pay you all that fortune you've been anxiously waiting for, but they detected further irregularities; the list of stolen items is misformatted and appears to contain other entries that don't belong there. Find and remove them.
+// You receive an object with nested objects with strings as values. Convert their values to number and return an object without the entries that evaluate to NaN.
+
+    function findAndRemove(obj) {
+
     }
