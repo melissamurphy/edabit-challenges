@@ -481,6 +481,8 @@ function signYourName(obj) {
 // You are given two arguments, one object with nested objects and a string that corresponds to your name.The object already contains several signature properties, one on the root, the others on each nested object.Return an object with all containing signature values set to your name.
     function signAll(obj, name) {
       for (const [key, value] of Object.entries(obj)) {
+        // key === "signature" ? obj[key] = name : obj[key].signature = name;
+
         if (key === "signature") {
           obj[key] = name;
         } else {
