@@ -491,6 +491,15 @@ function signYourName(obj) {
       }
       return obj;
     }
+// author solution
+function signAll(obj, name) {
+  obj.signature = name;
+  const arrWithAddedSignatures = Object.entries(obj).map((item) => {
+    item[1].signature = name;
+    return item;
+  });
+  return Object.fromEntries(arrWithAddedSignatures);
+}
 
 //  Burglary Series (23): Find and Remove
 // The insurance guy calls. They were about to pay you all that fortune you've been anxiously waiting for, but they detected further irregularities; the list of stolen items is misformatted and appears to contain other entries that don't belong there. Find and remove them.
