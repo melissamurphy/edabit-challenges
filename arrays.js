@@ -483,14 +483,32 @@ function signYourName(obj) {
       for (const [key, value] of Object.entries(obj)) {
         // key === "signature" ? obj[key] = name : obj[key].signature = name;
 
-        if (key === "signature") {
-          obj[key] = name;
-        } else {
-          obj[key].signature = name;
-        }
-      }
+        // if (key === "signature") {
+        //   obj[key] = name;
+        // } else {
+        //   obj[key].signature = name;
+        // }
+
+        //  if (key === "signature") {
+        //   obj[key] = name;
+        // }
+        obj.signature = name;
+      //   else
+      //    {
+      //     obj[key].signature = name;
+      // }
+      obj[key].signature = name;
       return obj;
     }
+// author solution
+function signAll(obj, name) {
+  obj.signature = name;
+  const arrWithAddedSignatures = Object.entries(obj).map((item) => {
+    item[1].signature = name;
+    return item;
+  });
+  return Object.fromEntries(arrWithAddedSignatures);
+}
 
 //  Burglary Series (23): Find and Remove
 // The insurance guy calls. They were about to pay you all that fortune you've been anxiously waiting for, but they detected further irregularities; the list of stolen items is misformatted and appears to contain other entries that don't belong there. Find and remove them.
