@@ -483,12 +483,21 @@ function signYourName(obj) {
       for (const [key, value] of Object.entries(obj)) {
         // key === "signature" ? obj[key] = name : obj[key].signature = name;
 
-        if (key === "signature") {
-          obj[key] = name;
-        } else {
-          obj[key].signature = name;
-        }
-      }
+        // if (key === "signature") {
+        //   obj[key] = name;
+        // } else {
+        //   obj[key].signature = name;
+        // }
+
+        //  if (key === "signature") {
+        //   obj[key] = name;
+        // }
+        obj.signature = name;
+      //   else
+      //    {
+      //     obj[key].signature = name;
+      // }
+      obj[key].signature = name;
       return obj;
     }
 // author solution
