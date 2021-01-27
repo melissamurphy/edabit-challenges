@@ -503,10 +503,14 @@ function signYourName(obj) {
 // author solution
 function signAll(obj, name) {
   obj.signature = name;
+  // replace all values for signature property (where present) with the value of 'name' variable
   const arrWithAddedSignatures = Object.entries(obj).map((item) => {
     item[1].signature = name;
     return item;
   });
+  // Object.entries yields an array of arrays of key-value pairs
+  // Calling the 'map' method of arrays then applies the callback function on each array in that array
+
   return Object.fromEntries(arrWithAddedSignatures);
 }
 
