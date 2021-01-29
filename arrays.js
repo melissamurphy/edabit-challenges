@@ -510,8 +510,11 @@ function signAll(obj, name) {
   });
   // Object.entries yields an array of arrays of key-value pairs
   // Calling the 'map' method of arrays then applies the callback function on each array in that array
-
+  // the callback function will take each item (i.e. array of 2 things, one is the property and the next is the value) in the array...
+  // and give its property-value (i.e. index 1) its own property 'signature' with the value of the variable 'name'
+  // each item is then returned out with this new property pair (for signature) within each object
   return Object.fromEntries(arrWithAddedSignatures);
+  // The .fromEntries method takes the array of nested arrays with nested arrays and converts it back to an object of nested objects
 }
 
 //  Burglary Series (23): Find and Remove
