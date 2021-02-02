@@ -145,3 +145,10 @@ function numPalindrome(num) {
     function findPerimeter(length, width) {
       return length * 2 + width * 2;
     }
+
+
+const calculatorObj = {
+  add(num1, num2) {
+    return num1 + num2;
+  }
+}

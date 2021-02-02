@@ -522,5 +522,7 @@ function signAll(obj, name) {
 // You receive an object with nested objects with strings as values. Convert their values to number and return an object without the entries that evaluate to NaN.
 
     function findAndRemove(obj) {
-
+// loop through each object to get to nested object, then loop through nested object to get to property values
+// change innermost property values to numbers with .toNumber method -- this will make numbers in strings no longer NaN
+// check that NaN is false and keep those, but eliminate the properties for which property-values evaluate to NaN
     }
