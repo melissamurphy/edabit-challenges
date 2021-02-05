@@ -526,3 +526,14 @@ function signAll(obj, name) {
 // change innermost property values to numbers with .toNumber method -- this will make numbers in strings no longer NaN
 // check that NaN is false and keep those, but eliminate the properties for which property-values evaluate to NaN
     }
+
+
+      var runningSum = function (nums) {
+        console.log(nums);
+        for (var i = 1; i < nums.length; i++) {
+          console.log(nums[i], nums[i - 1]);
+          nums[i] = nums[i - 1] + nums[i]
+
+        }
+        return nums;
+      };
