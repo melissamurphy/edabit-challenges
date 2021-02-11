@@ -160,3 +160,5 @@ const calculatorObj = {
     function calculateFuel(n) {
       return (n * 10 < 100 ? 100 : n * 10)
     }
+
+// https://edabit.com/challenge/HwFtgwoW2qbQnoD6s
