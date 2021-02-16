@@ -162,3 +162,11 @@ const calculatorObj = {
     }
 
 // https://edabit.com/challenge/HwFtgwoW2qbQnoD6s
+    // Point class
+    class Point {
+      constructor(x, y) {
+        x = x;
+        y = y;
+      }
+
+    }
