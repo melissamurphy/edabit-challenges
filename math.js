@@ -165,8 +165,8 @@ const calculatorObj = {
     // Point class
     class Point {
       constructor(x, y) {
-        x = x;
-        y = y;
+        this.x = x;
+        this.y = y;
       }
 
     }
