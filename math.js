@@ -205,6 +205,7 @@ const calculatorObj = {
         this.firstname = firstname
         this.lastname = lastname
         this.fullname = firstname + " " + lastname;
-        this.email = firstname.toLowerCase() + "." + lastname.toLowerCase() + "@company.com"
+        // this.email = firstname.toLowerCase() + "." + lastname.toLowerCase() + "@company.com"
+        this.email = `${firstname.toLowerCase()}.${lastname.toLowerCase()}@company.com `
       }
     }
