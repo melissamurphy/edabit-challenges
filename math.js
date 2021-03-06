@@ -209,3 +209,11 @@ const calculatorObj = {
         this.email = `${firstname.toLowerCase()}.${lastname.toLowerCase()}@company.com `
       }
     }
+
+    class Calculator {
+      constructor (num1, num2) {
+        this.num1 = num1;
+        this.num2 = num2;
+      }
+      // Write functions to add(), subtract(), multiply() and divide()
+    }
