@@ -258,3 +258,19 @@ const calculatorObj = {
       static hasUHD = true;
       static price = '$15.99';
     }
+
+
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+// https://edabit.com/challenge/iwdZiFucR5wkQsFHu
+      compareAge(other) {
+        // if conditional comparing both using instances of Person
+        // use '[name]' with brackets around it since it's a variable
+        // return statement
+
+      }
+    }
