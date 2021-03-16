@@ -266,11 +266,14 @@ const calculatorObj = {
         this.age = age;
       }
 
-// https://edabit.com/challenge/iwdZiFucR5wkQsFHu
       compareAge(other) {
-        // if conditional comparing both using instances of Person
-        // use '[name]' with brackets around it since it's a variable
-        // return statement
-
+        // Write code here!
+        if (this.age === other.age) {
+          return "" + other.name + " is the same age as me."
+        } else if (this.age < other.age) {
+          return "" + other.name + " is older than me."
+        } else {
+          return "" + other.name + " is younger than me."
+        }
       }
     }
