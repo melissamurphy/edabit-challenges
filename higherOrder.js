@@ -43,3 +43,35 @@ function whichIsLarger(f, g) {
 function arrayValuesTypes(arr) {
   return arr.map(value => typeof value)
 }
+
+// https://edabit.com/challenge/qcw8QBqa4amN2x4q4
+// function add2(x) {
+//   (return x + 2;)
+// }
+
+add2 = x => x+2;
+
+
+// function add3(x) {
+//   return x + 3;
+// }
+
+add3 = x => x+3;
+
+// function add5(x) {
+//   return x + 5;
+// }
+
+add5 = x => x+5;
+
+// function add7(x) {
+//   return x + 7;
+// }
+
+add7 = (x) => x+7;
+
+// function add11(x) {
+//   return x + 11;
+// }
+
+add11 = (x) => x+11;
