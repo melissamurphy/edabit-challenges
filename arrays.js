@@ -537,3 +537,9 @@ function signAll(obj, name) {
         }
         return nums;
       };
+
+// https://edabit.com/challenge/hwWLHcDoPZmXcGHyd
+// Create a function that adds a string ending to each member in an array.
+function addEnding(arr, ending) {
+  return arr.map(word => word.concat(ending))
+}
