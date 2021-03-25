@@ -75,3 +75,10 @@ add7 = (x) => x+7;
 // }
 
 add11 = (x) => x+11;
+
+// https://edabit.com/challenge/8A9E8LdE6zXcmPX3W
+// Write a function that maps files to their extension names.
+
+function getExtension(arr) {
+
+}
