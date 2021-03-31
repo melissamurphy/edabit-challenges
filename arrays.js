@@ -1,3 +1,9 @@
+function makePair(num1, num2) {
+  let array = [];
+  array.push(num1, num2);
+  return array;
+}
+
 // Create a function that takes an array of numbers or letters and returns a string.
 function arrayToString(arr) {
   return arr.join(''); // do not forget quotes as an argument or else JS will put commas in your returned string
