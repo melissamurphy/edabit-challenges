@@ -78,7 +78,10 @@ add11 = (x) => x+11;
 
 // https://edabit.com/challenge/8A9E8LdE6zXcmPX3W
 // Write a function that maps files to their extension names.
+// getExtension(["code.html", "code.css"])
+// ➞["html", "css"]
 
 function getExtension(arr) {
-
+    // split string into pre- and post- period
+    // return part after period
 }
