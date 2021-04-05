@@ -205,6 +205,11 @@ function minMax(arr) {
     }
   }
 
+  function calculateLosses(obj) {
+    const array = Object.values(obj);
+    const stolen = array.reduce((accumulator, currentValue) => accumulator + currentValue)
+      return (stolen === 0 ? "Lucky you" : "stolen")
+  }
 // Burglary 02
 // You call your spouse to inform his/her most precious item is gone! Given an object of stolen items, return the most expensive item on the list.
 // https://edabit.com/challenge/yMEs8bXPyZenPEYLM
